@@ -7,7 +7,7 @@
 </head>
 <body>
 	<table border="1">
-		<?php foreach ($_GET as $key => $value) : ?>
+		<?php foreach ($_SERVER as $key => $value) : ?>
 			<tr>
 				<td><?php echo $key ?></td>
 				<td><?php echo $value ?></td>
