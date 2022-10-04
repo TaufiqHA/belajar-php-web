@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // var_dump($_FILES);
+    var_dump($_FILES);
     move_uploaded_file($_FILES['upload_file']['tmp_name'], __DIR__ . '/file/' . $_FILES['upload_file']['name']);
 }
 
